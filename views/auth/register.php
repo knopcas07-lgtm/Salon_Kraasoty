@@ -8,8 +8,17 @@ $pageTitle = 'Регистрация';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= e($pageTitle) ?></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap 5.3.0 CSS с SRI (безопасно) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+          rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+          crossorigin="anonymous">
+    
     <style>
+        /* ваш код */
+    </style>
+</head>
     html, body { margin: 0; padding: 0; background-color: #f8f9fa; }
     .main-container { min-height: 100vh; display: flex; justify-content: center; align-items: center; }
     .card { width: 100%; max-width: 500px; margin: 10px; border-radius: 12px; }
