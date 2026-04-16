@@ -12,8 +12,18 @@ if (session_status() === PHP_SESSION_NONE) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= e($pageTitle ?? 'Салон красоты') ?></title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Bootstrap CSS с SRI -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+          rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+          crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons с SRI -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" 
+          rel="stylesheet"
+          integrity="sha384-wJbBqBhs5H5gT8G1e8hSLsqnOKv+JmmV5L8oJ9t4RGxG9xGp2AfL+NYyY2dO3X5"
+          crossorigin="anonymous">
 
     <?php if (!empty($extraCss)): ?>
         <link rel="stylesheet" href="<?= BASE_URL . '/css/' . e($extraCss) ?>">
