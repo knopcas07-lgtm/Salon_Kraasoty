@@ -11,7 +11,7 @@ $dbSecret = '';
 $envFile = __DIR__ . '/.env';
 
 if (!file_exists($envFile)) {
-    die('Ошибка: Файл конфигурации ' . $envFile . ' не найден. Создайте его с строкой: DB_PASSWORD=ваш_пароль');
+    die('Ошибка: Файл конфигурации ' . $envFile . ' не найден. Создайте его с строкой: DB_SECRET=ваш_пароль');
 }
 
 $lines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -20,14 +20,14 @@ foreach ($lines as $line) {
         continue;
     }
     $parts = explode('=', $line, 2);
-    if (count($parts) === 2 && trim($parts[0]) === 'DB_PASSWORD') {
+    if (count($parts) === 2 && trim($parts[0]) === 'DB_SECRET') {
         $dbSecret = trim($parts[1]);
         break;
     }
 }
 
 if (empty($dbSecret)) {
-    die('Ошибка: В файле ' . $envFile . ' не найдена строка DB_PASSWORD=ваш_пароль');
+    die('Ошибка: В файле ' . $envFile . ' не найдена строка DB_SECRET=ваш_секрет');
 }
 // --- Конец загрузки ---
 
