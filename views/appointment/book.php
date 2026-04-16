@@ -40,7 +40,16 @@ require ROOT_PATH . '/views/layout/header.php';
 
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<!-- CSS с SRI -->
+<link rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+      integrity="sha384-EZs1k2mHkY8rJWK9FhG5ZO6UJyX5UY5jEJT3oV9kE6k1nxjC8I6jSqfCkU8yR5b"
+      crossorigin="anonymous">
+
+<!-- JavaScript с SRI -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"
+        integrity="sha384-qF7mJh8dF4D/VsHlE9GxT+qn8pFtkWz1zXjJj8qSj8l3E6nLpD6otQjfYjC5lMf"
+        crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
 <style>
