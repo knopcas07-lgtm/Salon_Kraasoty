@@ -4,7 +4,7 @@
 // Корневой путь проекта (один уровень выше public_html/)
 define('ROOT_PATH', dirname(__DIR__));
 
-define('BASE_URL', 'http://n91378xg.beget.tech');
+define('BASE_URL', 'https://n91378xg.beget.tech');
 
 // Путь до папки uploads (внутри public_html)
 define('UPLOAD_DIR', ROOT_PATH . '/public_html/uploads/');
