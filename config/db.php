@@ -4,7 +4,7 @@
 $host    = 'localhost';
 $db      = 'n91378xg_vanda'; // ← замените на своё имя БД из Beget
 $user    = 'n91378xg_vanda'; // ← замените на своего пользователя
-$pass    = '#dfhdfhf1999$';  // ← замените на свой пароль
+$pass    = '5HL32mC!RRgf';  // ← замените на свой пароль
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
